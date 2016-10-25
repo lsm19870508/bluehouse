@@ -7,4 +7,6 @@ Homestead.json
 /.idea
 .Ds_store
 /public/assets
-/resources/assets
+/resources/assets/js
+/resources/less/bootstrap
+/resources/less/fontawesome
