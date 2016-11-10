@@ -39,6 +39,6 @@ Route::group(['middleware' => ['web']], function () {
     //进行中间件验证
     Route::group(['prefix' => 'weixin','middleware' => 'weixin.auth'],function (){
         //app首页
-        Route::get("/","WeiXinHomeController@index");
+        Route::get("/","WeiXinController@index");
     });
 });
