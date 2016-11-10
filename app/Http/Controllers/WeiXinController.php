@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 
 use App\Traits\WeiXinHelper;
+use Illuminate\Support\Facades\Input;
 
 class WeiXinController extends Controller
 {
