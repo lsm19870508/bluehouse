@@ -11,9 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/*
+|--------------------------------------------------------------------------
+| 微信专用路由组
+|--------------------------------------------------------------------------
+|
+|
+|
+*/
+// 网站根 为前往微信网页auth2.0的授权页面
+Route::get("/", "WeiXinHomeController@weixinAuth20");
 
 /*
 |--------------------------------------------------------------------------
@@ -27,5 +34,11 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+    // 获取微信accessToken并跳转至H5 首页
+    Route::get("/waAccessToken", "WeiXinHomeController@webAuthAccessTokenToIndex");
+    //进行中间件验证
+    Route::group(['prefix' => 'weixin','middleware' => 'weixin.auth'],function (){
+        //app首页
+        Route::get("/","WeiXinHomeController@index");
+    });
 });

@@ -10,3 +10,4 @@ Homestead.json
 /resources/assets/js
 /resources/less/bootstrap
 /resources/less/fontawesome
+composer.lock

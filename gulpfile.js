@@ -42,6 +42,14 @@ gulp.task("copyfiles", function() {
     gulp.src("vendor/bower_dl/font-awesome/fonts/**")
         .pipe(gulp.dest("public/assets/fonts"));
 
+    gulp.src("vendor/bower_dl/Framework7/dist/css/**")
+        .pipe(gulp.dest("public/assets/framework7/css"));
+
+    gulp.src("vendor/bower_dl/Framework7/dist/img/**")
+        .pipe(gulp.dest("public/assets/framework7/img"));
+
+    gulp.src("vendor/bower_dl/Framework7/dist/js/**")
+        .pipe(gulp.dest("public/assets/framework7/js"));
 });
 
 /**
