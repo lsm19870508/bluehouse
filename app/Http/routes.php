@@ -35,7 +35,7 @@ Route::get("/", "WeiXinController@weixinAuth20");
 
 Route::group(['middleware' => ['web']], function () {
     // 获取微信accessToken并跳转至H5 首页
-    Route::get("/waAccessToken", "WeiXinHomeController@webAuthAccessTokenToIndex");
+    Route::get("/waAccessToken", "WeiXinController@webAuthAccessTokenToIndex");
     //进行中间件验证
     Route::group(['prefix' => 'weixin','middleware' => 'weixin.auth'],function (){
         //app首页
