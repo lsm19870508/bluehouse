@@ -20,7 +20,7 @@
 |
 */
 // 网站根 为前往微信网页auth2.0的授权页面
-Route::get("/", "WeiXinHomeController@weixinAuth20");
+Route::get("/", "WeiXinController@weixinAuth20");
 
 /*
 |--------------------------------------------------------------------------
