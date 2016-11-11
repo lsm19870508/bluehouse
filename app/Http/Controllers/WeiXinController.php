@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Constants\SessionKeyName;
+use GuzzleHttp\Client;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 
