@@ -122,4 +122,20 @@ class LocalCache
         //设置秘钥过期时间为7150秒
         Redis::setex($this->getJsApiKey(), 7150, $ticket);
     }
+
+    /**
+     * 获取微信AccessToken
+     *
+     * @return null|string
+     */
+    public function getWXAccessToken()
+    {
+        $accessTokenKey = $this->getAccessTokenKey();
+
+        if ($this->hasWXAccessToken()) {
+            return Redis::get($accessTokenKey);
+        } else {
+            return null;
+        }
+    }
 }
