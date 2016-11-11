@@ -11,6 +11,7 @@ use App\Http\Requests;
 
 use App\Traits\WeiXinHelper;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Session;
 
 class WeiXinController extends Controller
 {
