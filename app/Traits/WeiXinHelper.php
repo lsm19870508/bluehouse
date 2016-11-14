@@ -53,6 +53,20 @@ trait WeiXinHelper
             'signature' => 'qm',
             'appId' => 'am',
         ];
+
+        if ($ticket) {
+            $timestamp = time();
+            $noncestr = env('WEIXIN_JSAPI_NONCESTR', 'DOtAPxGqLL39IGOQ8duwts');
+            $url = env('WEIXIN_JSAPI_URL');
+            $signature = sha1('jsapi_ticket=' . $ticket . '&noncestr=' . $noncestr . '&timestamp=' . $timestamp . '&url=' . $url);
+
+            $result['timestamp'] = $timestamp;
+            $result['noncestr'] = $noncestr;
+            $result['signature'] = $signature;
+            $result['appId'] = env('WEIXIN_APP_ID');
+        }
+
+        return $result;
     }
 
     /**
