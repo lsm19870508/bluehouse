@@ -14,7 +14,7 @@
     <meta name="status" content="{{$config['status']}}"/>
     <link rel="icon" href="/assets/client/assets/img/qm.ico">
     <title>全民联赛</title>
-    <link rel="stylesheet" href="/assets/client/assets/css/no1basketball-07fb7d11bb.min.css">
+    <link rel="stylesheet" href="/assets/client/assets/css/no1basketball-1ff199a81b.min.css">
     <script data-main="/assets/client/assets/js/no1basketball-3cfd7ace54.min" src="/assets/client/assets/js/libs/r/require.js"></script>
 </head>
 <body>
