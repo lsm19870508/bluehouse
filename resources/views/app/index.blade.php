@@ -12,10 +12,10 @@
     <meta name="noncestr" content="{{$config['noncestr']}}"/>
     <meta name="signature" content="{{$config['signature']}}"/>
     <meta name="status" content="{{$config['status']}}"/>
-    <link rel="icon" href="/client/assets/img/qm.ico">
+    <link rel="icon" href="/assets/client/assets/img/qm.ico">
     <title>全民联赛</title>
-    <link rel="stylesheet" href="/assets/css/no1basketball-07fb7d11bb.min.css">
-    <script data-main="/assets/js/no1basketball-3cfd7ace54.min" src="/assets/js/libs/r/require.js"></script>
+    <link rel="stylesheet" href="/assets/client/assets/css/no1basketball-07fb7d11bb.min.css">
+    <script data-main="/assets/client/assets/js/no1basketball-3cfd7ace54.min" src="/assets/client/assets/js/libs/r/require.js"></script>
 </head>
 <body>
 <div class="statusbar-overlay"></div>
@@ -65,7 +65,7 @@
             <!-- page-content has additional login-screen content -->
             <div class="page-content login-screen-content auth">
                 <div class="auth-logo">
-                    <img src="/assets/img/auth/logo.png">
+                    <img src="/assets/client/assets/img/auth/logo.png">
                 </div>
                 <!-- GetCode form -->
                 <form method="post" id="getCodeForm" action="/qmstat/code" class="form ajax-submit" enctype="application/x-www-form-urlencoded">
@@ -110,7 +110,7 @@
                         </a>
                     </div>
                     <div class="auth-logo">
-                        <img src="/assets/img/auth/logo.png">
+                        <img src="/assets/client/assets/img/auth/logo.png">
                     </div>
                 </div>
                 <!-- Login form -->
