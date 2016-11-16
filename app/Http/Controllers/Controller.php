@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Response\CommonResponseCode;
 use App\Traits\WeiXinHelper;
 use App\Util\AppUtil;
 use App\Util\Logger;
