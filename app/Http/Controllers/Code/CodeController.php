@@ -36,7 +36,7 @@ class CodeController extends Controller
             $this->validate($request, ['phone' => 'required | digits:11 | right_mobile']);
             //生成一个随机4位的字符串
             $code = Math::next();
-            $phone = Input::post("phone");
+            $phone = Input::get("phone");
             $result = null;
             //这里分环境决定是否真发送短信
             if (!parent::isLocal()) {
