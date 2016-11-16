@@ -68,7 +68,7 @@
                     <img src="/assets/client/assets/img/auth/logo.png">
                 </div>
                 <!-- GetCode form -->
-                <form method="post" id="getCodeForm" action="/qmstat/code" class="form ajax-submit" enctype="application/x-www-form-urlencoded">
+                <form method="post" id="getCodeForm" action="/weixin/code" class="form ajax-submit" enctype="application/x-www-form-urlencoded">
                     <div class="list-block inset">
                         <ul>
                             <li class="item-content">

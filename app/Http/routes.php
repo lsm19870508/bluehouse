@@ -40,5 +40,6 @@ Route::group(['middleware' => ['web']], function () {
     Route::group(['prefix' => 'weixin','middleware' => 'weixin.auth'],function (){
         //app首页
         Route::get("/","WeiXinController@index");
+        Route::post("/code","Code/CodeController@");
     });
 });
