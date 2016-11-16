@@ -5,10 +5,12 @@ namespace App\Http\Controllers\Code;
 use App\Constants\SessionKeyName;
 use App\Jobs\HuaXingSNSJob;
 use App\Util\CoolDown;
+use App\Util\Math;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Session;
 
 class CodeController extends Controller
