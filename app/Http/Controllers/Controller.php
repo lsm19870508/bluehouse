@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Traits\WeiXinHelper;
+use App\Util\AppUtil;
 use App\Util\Logger;
 use Illuminate\Foundation\Auth\Access\AuthorizesResources;
 use Illuminate\Foundation\Bus\DispatchesJobs;
